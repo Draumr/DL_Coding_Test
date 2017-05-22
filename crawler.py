@@ -2,9 +2,9 @@
 URL Crawler
 
 Use in browser:
-localhost:5000/?<requested url>
+localhost:5000/?url=<requested url>
 
-example: localhost:5000/?http://www.google.com
+example: localhost:5000/?url=http://www.google.com
 
 """
 import urllib2
