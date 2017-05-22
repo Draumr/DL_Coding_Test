@@ -25,13 +25,12 @@ data['requests_done'] = 0
 data['link_counter'] = 0
 
 @app.route("/", methods=['GET'])
-def crawler(url=None):
+def crawler():
     """Requests info from the given url
     :param:     url
     :return:    json dict"""
 
-    if url is None:
-        url = request.args.get('url')
+    url = request.args.get('url')
 
     try:
         handle = urllib2.urlopen(url)
